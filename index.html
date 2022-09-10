@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" onmouseover="stopSlide()" onmouseout="beginSlide()">
+        <div class="carousel-inner ci">
+            <img src="/images/p2.jpg"  id="image" class="d-block w-100" alt="...">
+        </div>
+        <button class="carousel-control-prev back" onclick="goBack()" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next next" onclick="goNext()"  type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <h2 class="mt-5">Enter and remove mouse to see the effect in the slider</h2>
+
+      <script src="/index.js"></script>
+    
+</body>
+</html>
