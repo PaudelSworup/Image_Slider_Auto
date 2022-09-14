@@ -17,7 +17,7 @@ function sliderFunction(){
 
 function goBack(){
     if(i == 0){
-        i=5
+        i=array_length
     }
     i--
     i=i%array_length
